@@ -1,0 +1,48 @@
+site_name: Technasium MBH
+site_url: https://technasiummbh.nl/
+
+theme:
+  name: material
+  features:
+    - content.tabs.link
+    - content.tooltips
+    - content.code.copy
+  logo: img/logo.png
+  favicon: img/favicon.ico
+  language: nl
+  custom_dir: overrides
+  palette:
+    primary: indigo
+    accent: purple
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+extra_css:
+  - https://fonts.googleapis.com/icon?family=Material+Icons
+  - extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.tasklist
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.emoji
+
+nav:
+  - Home: index.md
+  - Downloads:
+    - Downloads: downloads/index.md
+  - Projecten:
+    - Projecten: projecten/index.md
+    - Interactive Voorbeelden: projecten/interactive_voorbeelden.md
+  - Vaardigheden:
+    - Vaardigheden: vaardigheden/index.md
+    - Dprinten: vaardigheden/3dprinten.md
+    - Fusion: vaardigheden/fusion.md
+    - Tandwielen: vaardigheden/Tandwielen.md
+
+repo_url: https://github.com/nveerman2/technasium-mbh-docs
+repo_name: GitHub
