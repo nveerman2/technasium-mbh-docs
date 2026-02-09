@@ -1,5 +1,6 @@
 site_name: Technasium MBH
 site_url: https://technasiummbh.nl/
+use_directory_urls: true
 
 theme:
   name: material

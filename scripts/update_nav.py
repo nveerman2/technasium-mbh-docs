@@ -167,6 +167,7 @@ def write_yml():
     lines = [
         "site_name: Technasium MBH",
         f"site_url: {SITE_URL}",
+        "use_directory_urls: true",
         "",
         "theme:",
         "  name: material",
