@@ -1,0 +1,249 @@
+/* ===================
+   TYPOGRAFIE & HEADING STIJL (Grav-achtig)
+=================== */
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700 !important;
+    color: #2b2b2b;
+    margin-top: 1.4em;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 2px solid #eaecef;
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+strong {
+    color: #222;
+}
+
+/* ===================
+   HOMEPAGE TEGELS MET ANIMATIE
+=================== */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.home-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.15);
+}
+
+.home-card span {
+  font-size: 64px;
+  color: #3f51b5;
+}
+
+.home-card h3 {
+  margin-top: 1rem;
+  color: #1f2937;
+}
+
+
+
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tile {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 200px;
+  flex: 1 1 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+}
+
+.tile img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.tile h3 {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--md-primary-fg-color);
+}
+
+/* ===================
+   RESPONSIVE HEADINGS
+=================== */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .tile h3 {
+    font-size: 1rem;
+  }
+}
+
+/* ===================
+   YOUTUBE EMBEDS
+=================== */
+.youtube-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.youtube-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ===================
+   CODE BLOKKEN
+=================== */
+code {
+    background-color: #f4f4f4;
+    color: #c7254e;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: Consolas, monospace;
+    font-size: 0.95em;
+}
+
+pre code {
+    display: block;
+    padding: 1rem;
+    overflow-x: auto;
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    border-radius: 6px;
+    font-size: 0.95em;
+}
+
+/* ===================
+   OPDRACHTEN MARKERING
+=================== */
+.opdracht-blok {
+    border-left: 4px solid #3478f6;
+    background-color: #eef4ff;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 6px;
+}
+
+/* ===================
+   BETER LIJSTWEERGAVE
+=================== */
+ul {
+    padding-left: 1.5em;
+}
+
+ul li {
+    margin-bottom: 0.4em;
+}
+
+ol {
+    padding-left: 1.5em;
+}
+
+/* ===================
+   TABBELSTIJL
+=================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* ===================
+   FOOTER / DISCLAIMER
+=================== */
+footer {
+    font-size: 0.8em;
+    color: #888;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* ===================
+   BUTTON STIJL
+=================== */
+a.button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--md-primary-fg-color);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.button:hover {
+    background-color: #3f51b5;
+}
+
+/* ===================
+    AFBEELDINGEN
+=================== */
+
+
+/* Alle afbeeldingen full-width */
+.md-typeset img {
+    width: 100%;
+    height: auto;
+}
