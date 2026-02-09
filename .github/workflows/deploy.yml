@@ -1,4 +1,5 @@
 name: Build & Deploy MkDocs
+run: mkdocs gh-deploy --force --clean
 
 on:
   push:
