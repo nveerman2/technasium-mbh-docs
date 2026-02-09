@@ -43,6 +43,11 @@ jobs:
             echo "No nav changes to commit."
           fi
 
+      - name: Prepare CNAME
+        run: |
+          echo technasiummbh.nl > CNAME
+
       - name: Deploy to GitHub Pages
         run: |
-          mkdocs gh-deploy --force --clean --cname technasiummbh.nl
+          mkdocs gh-deploy --force --clean
+
